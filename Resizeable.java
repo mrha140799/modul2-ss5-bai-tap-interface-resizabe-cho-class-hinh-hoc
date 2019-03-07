@@ -1,5 +1,5 @@
 package Resizable;
 
 public interface Resizeable {
-    void resize(Circle c ,double percent);
+    void resize(Circle c);
 }

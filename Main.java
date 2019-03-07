@@ -9,10 +9,13 @@ public class Main {
         circles[0] = new Circle(10);
         circles[1] = new Circle(5);
         circles[2] = new Circle(12);
+        System.out.println("Before resize : ");
+        for (Circle c : circles) {
+            System.out.println(c);
+        }
+        System.out.println("After resize : ");
         for (Circle c : circles){
-            System.out.println("Mời nhập vào phần trăm muốn thay đổi circle có radius= "+ c.getRadius() +" : ");
-            float persen = new Scanner(System.in).nextFloat();
-            crable.resize(c , persen);
+            crable.resize(c);
             System.out.println(c);
         }
     }
